@@ -141,6 +141,23 @@
                                             </div>
 
                                             <div class="form-group">
+                                                <label>category</label>
+                                                    <select require name="category" class="form-control"  id="js-example-category" style="width: 100%;height: 36px;"  >
+                                                    <?php foreach($category as $row){ ?>
+                                                        <option value="<?php echo $row['category']; ?>"><?php echo $row['category']; ?></option>
+                                                    <?php } ?>
+                                                    
+                                                </select>
+
+                                                <script>
+                                                    $("#js-example-category").select2({});
+                                                    <?php if($status=="update"){ ?>
+                                                        $('#js-example-category').val('<?php echo set_value('category_pilih', $category_pilih); ?>').trigger('change');
+                                                    <?php } ?>
+                                                </script>
+                                            </div>
+
+                                            <div class="form-group">
                                                 <label>Bahasa</label>
                                                     <select require name="bahasa" class="form-control"  id="js-example-bahasa" style="width: 100%;height: 36px;"  >
                                                     <?php foreach($bahasa as $row){ ?>

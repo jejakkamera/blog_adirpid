@@ -4,10 +4,12 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="title" content="adirp.id">
+    <meta name="description" content="adirp.id, Blog&news, adi rizky pratama">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php echo base_url(); ?></title>
+    <title><?php echo $header; ?></title>
     <link rel="icon" href="<?php echo base_url(); ?>assets/sasu/img/favicon.png">
-    <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/bootstrap.min.css">
     <!-- animate CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/animate.css">
@@ -24,17 +26,37 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/style.css">
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_compres/style.css"> 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    
+    <!-- flaticon CSS 
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/flaticon.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/themify-icons.css">
+    <!-- font awesome CSS 
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/magnific-popup.css">
+    <!-- swiper CSS 
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/slick.css">
+    <!-- style CSS 
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/all.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>-->
+    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery-1.12.1.min.js"></script>
 </head>
 
 <body>
     <!--::header part start::-->
     <header class="main_menu home_menu">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img width="50%" src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img width="50%" data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -44,16 +66,16 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="feature.html">Blog</a>
+                                    <a class="nav-link" href="<?php echo base_url('web/category/blog'); ?>">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pricing.html">teaching</a>
+                                    <a class="nav-link" href="<?php echo base_url('web/category/teaching'); ?>">teaching</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pricing.html">research</a>
+                                    <a class="nav-link" href="<?php echo base_url('web/category/research'); ?>">research</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
@@ -61,9 +83,9 @@
                                         product
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="blog.html"> E-Book</a>
-                                        <a class="dropdown-item" href="single-blog.html">Apps</a>
-                                        <a class="dropdown-item" href="single-blog.html">our services</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('web/category/ebook'); ?>"> E-Book</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('web/category/apps'); ?>">Apps</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('web/category/service'); ?>">our services</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">

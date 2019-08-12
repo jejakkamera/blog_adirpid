@@ -152,7 +152,19 @@ class Custom_model extends CI_Model{
      
             return null;
       
-    }
+	}
+	
+	function fetch_data($limit, $start,$where)
+	{
+
+		$this->db->select("*");
+		$this->db->from("v_post");
+		$this->db->like($where);
+		$this->db->order_by("create_date", "DESC");
+		$this->db->limit($limit, $start);
+		$query = $this->db->get();
+		return $query;
+	}
 	
 	
 

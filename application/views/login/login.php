@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/themplate/assets/images/logo-ubp.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/sasu/img/favicon.png">
     <title>Login</title>
     <!-- Custom CSS -->
     <link href="<?php echo base_url(); ?>assets/themplate/dist/css/style.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
             <div class="auth-box">
                 <div id="loginform">
                     <div class="logo">
-                        <span class="db"><img src="<?php echo base_url(); ?>assets/themplate/assets/images/logo-ubp90.png" alt="logo" /></span>
+                        <span class="db"><img src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="logo" /></span>
                         <h5 class="font-medium m-b-20">Login Page</h5>
                     </div>
                     <!-- Form -->

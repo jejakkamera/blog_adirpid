@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
-                        <a href="index.html" class="footer_logo_iner"> <img src="img/footer_logo.png" alt="#"> </a>
+                        <a href="index.html" class="footer_logo_iner"> <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="#"> </a>
                         <h4>About Us</h4>
                         <p>
                         </p>
@@ -73,31 +73,41 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- jquery plugins here-->
     <!-- jquery -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/swiper.min.js"></script>
-    <!-- swiper js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/masonry.pkgd.js"></script>
-    <!-- particles js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery.nice-select.min.js"></script>
-    <!-- slick js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/slick.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery.counterup.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/waypoints.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/contact.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery.ajaxchimp.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery.form.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery.validate.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/sasu/js/mail-script.js"></script>
-    <!-- custom js -->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/custom.js"></script>
+    
+   
+        <!-- Global site tag (gtag.js) - Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144573609-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144573609-1');
+        </script>
+
+        <!-- popper js -->
+        <script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="<?php echo base_url(); ?>assets/sasu/js/bootstrap.min.js"></script>
+        <!-- easing js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+        <!-- swiper js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+        <!-- swiper js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+        <!-- particles js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+        <!-- slick js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
+        <!-- custom js -->
+        <script src="<?php echo base_url(); ?>assets/sasu/js_min/custom.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.0/lazysizes.min.js"></script>
 
 </body>
 

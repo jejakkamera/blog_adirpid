@@ -29,6 +29,7 @@ class Custom_controler extends CI_Controller {
 		$where=array();
 		$bahasa= $this->Master_model->master_result($where,'ms_bahasa');
 		$tag= $this->Master_model->master_result($where,'ms_tag');
+		$category= $this->Master_model->master_result($where,'ms_category');
 
 		$data=array(
 			'judul'=>$data_post->judul,
@@ -36,7 +37,9 @@ class Custom_controler extends CI_Controller {
 			'label'=>$data_post->label,
 			'img_tub'=>$data_post->img_tub,
 			'bahasa_pilih'=>$data_post->bahasa,
+			'category_pilih'=>$data_post->category,
 			'status_post'=>$data_post->status_post,
+			'category'=>$category,
 			'bahasa'=>$bahasa,
 			'tag'=>$tag,
 			'action'=>'custom_controler/edit_post_acction/'.$id_post,
@@ -61,7 +64,7 @@ class Custom_controler extends CI_Controller {
 		$this->_post_rule();
 		if ( ($this->form_validation->run() == TRUE) ) {
 			$where_=array('id_post'=>$id_post);
-		$data_post=$this->Master_model->master_get($where_,'ms_post');
+			$data_post=$this->Master_model->master_get($where_,'ms_post');
 			if($data_post){
 				$tags=json_encode($this->input->post('text_tags',TRUE));
 				$tags=str_replace('"',"",$tags);
@@ -70,6 +73,7 @@ class Custom_controler extends CI_Controller {
 					'detail' => addslashes($this->input->post('editor1',false)),
 					'img_tub' => $this->input->post('img_tub',false),
 					'label' => $tags,
+					'category' => $this->input->post('category',false),
 					'bahasa' => $this->input->post('bahasa',false),
 					'status_post' => $this->input->post('publish',false),
 					'last_edit_info' => $this->Master_model->user_cek_ident(),
@@ -108,16 +112,19 @@ class Custom_controler extends CI_Controller {
 		$where=array();
 		$bahasa= $this->Master_model->master_result($where,'ms_bahasa');
 		$tag= $this->Master_model->master_result($where,'ms_tag');
+		$category= $this->Master_model->master_result($where,'ms_category');
 
 		$data=array(
 			'judul'=>"",
 			'detail'=>"",
 			'label'=>"",
 			'img_tub'=>"",
+			'category_pilih'=>"",
 			'bahasa_pilih'=>"",
 			'status_post'=>"",
 
 			'bahasa'=>$bahasa,
+			'category'=>$category,
 			'tag'=>$tag,
 			'action'=>'custom_controler/add_post_acction',
 			'status'=>'create',
@@ -156,6 +163,7 @@ class Custom_controler extends CI_Controller {
 					'label' => $tags,
 					'create_date' => date('Y-m-d h:i:s'),
 					'bahasa' => $this->input->post('bahasa',false),
+					'category' => $this->input->post('category',false),
 					'status_post' => $this->input->post('publish',false),
 					'tubmail' => $tubmail,
 
@@ -185,9 +193,10 @@ class Custom_controler extends CI_Controller {
 
 		
 		$this->form_validation->set_rules('post', 'Judul Post', 'trim|required|xss_clean');
-		//$this->form_validation->set_rules('editor1', 'editor1', 'trim');
+		$this->form_validation->set_rules('editor1', 'editor1', 'trim');
 		$this->form_validation->set_rules('img_tub', 'img_tub', 'trim|xss_clean');
 		$this->form_validation->set_rules('text_tags', 'Tags', 'trim|xss_clean');
+		$this->form_validation->set_rules('category', 'category', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('bahasa', 'bahasa', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('publish', 'publish', 'trim|required|xss_clean');
 		$this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');	

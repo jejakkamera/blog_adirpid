@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/themplate/assets/images/logo-upr.png">
-    <title>Kepegawaian UBP Karawang</title>
+    <title>Admin page</title>
     <!-- Custom CSS -->
     <link href="<?php echo base_url(); ?>assets/themplate/dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

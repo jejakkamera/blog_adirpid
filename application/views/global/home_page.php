@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="banner_img d-none d-lg-block">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/banner_img.png" alt="">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/banner_img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -27,37 +27,10 @@
 	<div class="row">	
 	<div class="col-lg-8 posts-list">
 				<h3 class="mb-30">recent blog</h3>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="single-defination">
-							<h4 class="mb-20">Definition 01</h4>
-							<p>Recently, the US Federal government banned online casinos from operating in America by
-								making it illegal to
-								transfer money to them through any US bank or payment system. As a result of this law,
-								most of the popular
-								online casino networks</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single-defination">
-							<h4 class="mb-20">Definition 02</h4>
-							<p>Recently, the US Federal government banned online casinos from operating in America by
-								making it illegal to
-								transfer money to them through any US bank or payment system. As a result of this law,
-								most of the popular
-								online casino networks</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single-defination">
-							<h4 class="mb-20">Definition 03</h4>
-							<p>Recently, the US Federal government banned online casinos from operating in America by
-								making it illegal to
-								transfer money to them through any US bank or payment system. As a result of this law,
-								most of the popular
-								online casino networks</p>
-						</div>
-					</div>
+				<div class="row" id="post_blog">
+            
+
+					
 				</div>
 			</div>
 			
@@ -66,31 +39,8 @@
 			
 			<aside class="single_sidebar_widget tag_cloud_widget">
                      <h4 class="widget_title">Tag Clouds</h4>
-                     <ul class="list">
-                        <li>
-                           <a href="#">project</a>
-                        </li>
-                        <li>
-                           <a href="#">love</a>
-                        </li>
-                        <li>
-                           <a href="#">technology</a>
-                        </li>
-                        <li>
-                           <a href="#">travel</a>
-                        </li>
-                        <li>
-                           <a href="#">restaurant</a>
-                        </li>
-                        <li>
-                           <a href="#">life style</a>
-                        </li>
-                        <li>
-                           <a href="#">design</a>
-                        </li>
-                        <li>
-                           <a href="#">illustration</a>
-                        </li>
+                     <ul class="list" id="tag_post">
+                        
                      </ul>
                   </aside>
 
@@ -111,10 +61,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-sm-6">
                     <div class="single_pricing_part">
-					<h3 class="widget_title">Recent Post</h3>
+					<h3 class="widget_title">Course</h3>
 					<hr>
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_1.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_1.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>From life was you fish...</h3>
@@ -122,8 +72,9 @@
                            <p>January 12, 2019</p>
                         </div>
                      </div>
+
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_2.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_2.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>The Amazing Hubble</h3>
@@ -131,8 +82,9 @@
                            <p>02 Hours ago</p>
                         </div>
                      </div>
+
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_3.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_3.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>Astronomy Or Astrology</h3>
@@ -140,8 +92,9 @@
                            <p>03 Hours ago</p>
                         </div>
                      </div>
+
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_4.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_4.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>Asteroids telescope</h3>
@@ -154,10 +107,10 @@
 				
                 <div class="col-lg-6 col-sm-6">
                     <div class="single_pricing_part">
-					<h3 class="widget_title">Recent Post</h3>
+					<h3 class="widget_title">Product</h3>
 					<hr>
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_1.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_1.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>From life was you fish...</h3>
@@ -166,7 +119,7 @@
                         </div>
                      </div>
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_2.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_2.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>The Amazing Hubble</h3>
@@ -175,7 +128,7 @@
                         </div>
                      </div>
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_3.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_3.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>Astronomy Or Astrology</h3>
@@ -184,7 +137,7 @@
                         </div>
                      </div>
                      <div class="media post_item">
-                        <img src="<?php echo base_url(); ?>assets/sasu/img/post/post_4.png" alt="post">
+                        <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/post/post_4.png" alt="post">
                         <div class="media-body">
                            <a href="single-blog.html">
                               <h3>Asteroids telescope</h3>
@@ -196,10 +149,7 @@
                 </div>
             </div>
         </div>
-        <img src="img/left_sharp.png" alt="" class="left_shape_1">
-        <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
-        <img src="img/animate_icon/shape.png" alt="" class="feature_icon_4">
-	</section>
+       </section>
 	
 <!-- cta part start-->
 <section class="cta_part section_padding">
@@ -218,3 +168,62 @@
             </div>
         </div>
     </section>
+
+    <script>
+      $(document).ready(function(){
+         var blog = "blog";
+         $.post("<?php echo base_url(); ?>api/post",{data: blog,category : ""}, function(data,status){
+            //console.log(data);
+            var obj = JSON.parse(data);
+            if(obj.status==200){
+               var data = (obj.data);
+               var hasilItems = '';
+               for(i = 0;i < 3; i++){
+
+                  var hasilItem = '<div class="col-md-4"><div class="single-defination" style="text-align:justify;"><a href="<?php echo base_url('web/post/'); ?>'+data[i]['tubmail']+'"><h4 class="mb-20">'+data[i]['judul']+'</h4></a><img data-sizes="auto"  class="lazyload center" data-src="<?php echo base_url(); ?>'+data[i]['img_tub']+'" alt="post"><p>'+data[i]['isi_post']+'</p></div></div>';        
+                   hasilItems = hasilItems+hasilItem;
+                  //console.log(data[i]['judul']);
+               }
+               document.getElementById("post_blog").innerHTML = hasilItems;
+               }else{
+                  console.log(obj.message);
+               }
+
+            //console.log(obj['data']);
+			
+        });
+
+        var tag = "tag";
+         $.post("<?php echo base_url(); ?>api/post",{data: tag,category : ""}, function(data,status){
+            //console.log(data);
+            var obj = JSON.parse(data);
+            if(obj.status==200){
+               var data = (obj.data);
+               var hasilItems = '';
+               for(i = 0;i < data.length; i++){
+                  const anchor = document.createElement('a');
+                  const list = document.getElementById('tag_post');
+                  const li = document.createElement('li');
+                  anchor.href = "<?php echo base_url('web/search/label/'); ?>"+data[i]['tags'];
+                  anchor.innerText = data[i]['tags']+" ("+data[i]['count']+")";
+                  li.appendChild(anchor);
+                  list.appendChild(li);
+                  /*
+                     <li>
+                           <a href="#">design</a>
+                        </li>
+
+                  */
+                  //console.log(data[i]['judul']);
+               }
+               
+               }else{
+                  console.log(obj.message);
+               }
+
+            //console.log(obj['data']);
+			
+        });
+
+      });
+    </script>
