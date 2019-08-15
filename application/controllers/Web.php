@@ -12,6 +12,39 @@ class Web extends CI_Controller {
 		$this->footer();
 	}
 
+
+	public function error_404()
+	{
+		
+		$this->header('404 Page Not Found');
+		$this->load->view('global/error_404');
+		$this->footer();
+	}
+
+	public function sitemap_html()
+	{
+		$this->load->model('Master_model');
+		$where_=array(
+			'status_post'=>1
+		);
+		$data_post=$this->Master_model->master_result($where_,'v_post');
+		$data['items'] = $data_post;
+		$this->header('sitemap');
+		$this->load->view('global/sitemap_html', $data);
+		$this->footer();
+	}
+
+	public function sitemap_xml()
+	{
+		$this->load->model('Master_model');
+		$where_=array(
+			'status_post'=>1
+		);
+		$data_post=$this->Master_model->master_result($where_,'v_post');
+        $data['items'] = $data_post;
+        $this->load->view('global/sitemap', $data);
+	}
+
 	public function category($name)
 	{
 		$this->load->helper('security');

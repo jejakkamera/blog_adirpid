@@ -6,9 +6,7 @@
                     <div class="banner_text">
                         <div class="banner_text_iner">
                             <h1>Selamat Datang di adirp.id</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam.</p>
+                            <p>adirp.id adalah blog pribadi yang berisi catatan pribadi, dokumen pengajaran, dokumen penelitian. selain tulisan adirp.id juga berisi prodak yang kami jual.</p>
                         </div>
                     </div>
                 </div>

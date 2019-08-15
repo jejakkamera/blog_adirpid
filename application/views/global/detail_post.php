@@ -242,41 +242,8 @@
 
                   <aside class="single_sidebar_widget popular_post_widget">
                      <h3 class="widget_title">Recent Post</h3>
-                     <div class="media post_item">
-                        <img src="img/post/post_1.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>From life was you fish...</h3>
-                           </a>
-                           <p>January 12, 2019</p>
-                        </div>
-                     </div>
-                     <div class="media post_item">
-                        <img src="img/post/post_2.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>The Amazing Hubble</h3>
-                           </a>
-                           <p>02 Hours ago</p>
-                        </div>
-                     </div>
-                     <div class="media post_item">
-                        <img src="img/post/post_3.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>Astronomy Or Astrology</h3>
-                           </a>
-                           <p>03 Hours ago</p>
-                        </div>
-                     </div>
-                     <div class="media post_item">
-                        <img src="img/post/post_4.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>Asteroids telescope</h3>
-                           </a>
-                           <p>01 Hours ago</p>
-                        </div>
+                     <div id="post_blog" >
+
                      </div>
                   </aside>
                  
@@ -334,6 +301,31 @@
 
    <script>
       $(document).ready(function(){
+
+         var blog = "blog";
+         $.post("<?php echo base_url(); ?>api/post",{data: blog,category : ""}, function(data,status){
+            //console.log(data);
+            var obj = JSON.parse(data);
+            if(obj.status==200){
+               var data = (obj.data);
+               var hasilItems = '';
+               for(i = 0;i < 5; i++){
+
+                  /*var hasilItem = '<div class="col-md-4"><div class="single-defination" style="text-align:justify;"><a href="<?php echo base_url('web/post/'); ?>'+data[i]['tubmail']+'"><h4 class="mb-20">'+data[i]['judul']+'</h4></a><img data-sizes="auto"  class="lazyload center" data-src="<?php echo base_url(); ?>'+data[i]['img_tub']+'" alt="post"><p>'+data[i]['isi_post']+'</p></div></div>';       */ 
+
+                  var hasilItem = '<div class="media post_item"><img class="lazyload" width="90px" height="80" width="80" src="<?php echo base_url(); ?>'+data[i]['img_tub']+'" alt="post"><div class="media-body"><a href="single-blog.html"><h3>'+data[i]['judul']+'</h3></a><p>'+data[i]['label']+'</p></div></div>';
+                   hasilItems = hasilItems+hasilItem;
+                  //console.log(data[i]['judul']);
+               }
+               document.getElementById("post_blog").innerHTML = hasilItems;
+               }else{
+                  console.log(obj.message);
+               }
+
+            //console.log(obj['data']);
+			
+        });
+
         var tag = "tag";
          $.post("<?php echo base_url(); ?>api/post",{data: tag,category : ""}, function(data,status){
             //console.log(data);

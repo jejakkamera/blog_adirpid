@@ -5,7 +5,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
                         <a href="index.html" class="footer_logo_iner"> <img data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="#"> </a>
-                        <h4>About Us</h4>
+                        
                         <p>
                         </p>
                     </div>
@@ -13,14 +13,19 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
                         <h4>Contact Info</h4>
-                        
+                        <i class="ti-tablet"></i> +62 0896 9997 1950<br>
+                        <i class="ti-email"></i> adi.rizky@ubpkarawang.ac.id
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
                         <h4>Important Link</h4>
                         <ul class="list-unstyled">
-                            <li><a href=""> Blog</a></li>
+                            <li><a href="<?php echo base_url('web/category/blog'); ?>"> Blog</a></li>
+                            <li><a href="<?php echo base_url('web/category/teaching'); ?>"> Teaching</a></li>
+                            <li><a href="<?php echo base_url('web/category/research'); ?>"> Research</a></li>
+                            <li><a  href="<?php echo base_url('web/sitemap_html'); ?>"> Sitemap</a></li>
+                            <li><a  href="https://adirp.id/web/post/welcome-to-adi-rizky-pratama-page"> Adi page</a></li>
                             
                         </ul>
                     </div>
@@ -59,10 +64,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <div class="col-lg-4">
                     <div class="footer_icon social_icon">
                         <ul class="list-unstyled">
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="https://www.facebook.com/kurcaci507" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://adirp.id/web/post/welcome-to-adi-rizky-pratama-page" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCCj0XV0rtIcyQjjqNpTOlQA?disable_polymer=true&nv=1" class="single_social_icon"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://github.com/jejakkamera" class="single_social_icon"><i class="fab fa-github"></i></a></li>
+                            
                         </ul>
                     </div>
                 </div>

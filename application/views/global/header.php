@@ -5,48 +5,32 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="title" content="adirp.id">
-    <meta name="description" content="adirp.id, Blog&news, adi rizky pratama">
+    <meta name="description" content="adirp.id adalah blog pribadi yang berisi catatan pribadi, dokumen pengajaran, dokumen penelitian. selain tulisan adirp.id juga berisi prodak yang kami jual">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php echo $header; ?></title>
     <link rel="icon" href="<?php echo base_url(); ?>assets/sasu/img/favicon.png">
 
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/owl.carousel.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/flaticon.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css/style.css">
-    <!-- Bootstrap CSS
+    <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_compres/style.css"> 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- font awesome CSS -->
     
-    <!-- flaticon CSS 
+    <!-- flaticon CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/flaticon.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/themify-icons.css">
-    <!-- font awesome CSS 
+    <!-- font awesome CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/magnific-popup.css">
-    <!-- swiper CSS 
+    <!-- swiper CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/slick.css">
-    <!-- style CSS 
+    <!-- style CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/animate.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/sasu/css_min/all.css">
     
-    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>-->
-    <script src="<?php echo base_url(); ?>assets/sasu/js/jquery-1.12.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <!--<script src="<?php echo base_url(); ?>assets/sasu/js/jquery-1.12.1.min.js"></script> -->
 </head>
 
 <body>
@@ -56,7 +40,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img width="50%" data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img width="40%" data-sizes="auto" class="lazyload" data-src="<?php echo base_url(); ?>assets/sasu/img/favicon.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +73,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pricing.html">Archive</a>
+                                    <a class="nav-link" href="<?php echo base_url('web/sitemap_html'); ?>">Sitemap</a>
                                 </li>
                                
                             </ul>
