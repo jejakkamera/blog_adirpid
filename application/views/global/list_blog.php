@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                <div class="breadcrumb_iner text-center">
                   <div class="breadcrumb_iner_item">
-                     <h2><?php echo $judul; ?></h2>
+                     <h1><?php echo $judul; ?></h1>
                   </div>
                </div>
             </div>
@@ -34,7 +34,8 @@
                             <form action="#">
                                <div class="form-group">
                                   <div class="input-group mb-3">
-                                     <input type="text" class="form-control" placeholder='Search Keyword'
+                                  <form action="<?php echo base_url('web/search_key'); ?>">
+                                     <input type="text" name='search' class="form-control" placeholder='Search Keyword'
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                      <div class="input-group-append">
                                         <button class="btn" type="button"><i class="ti-search"></i></button>
@@ -42,6 +43,7 @@
                                   </div>
                                </div>
                                <button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Search</button>
+                               </form>
                             </form>
                          </aside>
 

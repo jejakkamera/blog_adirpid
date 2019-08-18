@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                <div class="breadcrumb_iner text-center">
                   <div class="breadcrumb_iner_item">
-                     <h2>sitemap</h2>
+                     <h1>sitemap</h1>
                   </div>
                </div>
             </div>

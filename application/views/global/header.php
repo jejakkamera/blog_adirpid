@@ -7,6 +7,8 @@
     <meta name="title" content="adirp.id">
     <meta name="description" content="adirp.id adalah blog pribadi yang berisi catatan pribadi, dokumen pengajaran, dokumen penelitian. selain tulisan adirp.id juga berisi prodak yang kami jual">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="adirp,adi rizky pratama,blog,content">
+    <meta name="author" content="adi rizky pratama">
     <title><?php echo $header; ?></title>
     <link rel="icon" href="<?php echo base_url(); ?>assets/sasu/img/favicon.png">
 
@@ -67,9 +69,9 @@
                                         product
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="<?php echo base_url('web/category/ebook'); ?>"> E-Book</a>
-                                        <a class="dropdown-item" href="<?php echo base_url('web/category/apps'); ?>">Apps</a>
-                                        <a class="dropdown-item" href="<?php echo base_url('web/category/service'); ?>">our services</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('shop/search/ebook/category'); ?>"> E-Book</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('shop/search/apps/category'); ?>">Apps</a>
+                                        <a class="dropdown-item" href="<?php echo base_url('shop/search/service/category'); ?>">our services</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -86,7 +88,7 @@
         </div>
         <div class="search_input" id="search_input_box">
             <div class="container ">
-                <form class="d-flex justify-content-between search-inner">
+                <form class="d-flex justify-content-between search-inner" action='<?php echo base_url('web/search_key'); ?>'>
                     <input type="text" class="form-control" id="search_input" placeholder="Search Here">
                     <button type="submit" class="btn"></button>
                     <span class="ti-close" id="close_search" title="Close Search"></span>

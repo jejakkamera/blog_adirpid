@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                <div class="breadcrumb_iner text-center">
                   <div class="breadcrumb_iner_item">
-                     <h2><?php echo $post->judul; ?></h2>
+                     <h1><?php echo $post->judul; ?></h1>
                   </div>
                </div>
             </div>
@@ -20,11 +20,11 @@
             <div class="col-lg-8 posts-list">
                <div class="single-post">
                   <div class="feature-img">
-                     <img class="img-fluid" src="img/blog/single_blog_1.png" alt="">
+                     <img class="img-fluid" src="<?php echo base_url().$post->img_tub; ?>" alt="<?php echo $post->judul; ?>">
                   </div>
                   <div class="blog_details">
-                     <h2><?php echo $post->judul; ?>
-                     </h2>
+                   
+
                      <ul class="blog-info-link mt-3 mb-4">
                         <li><a href="#"><i class="far fa-user"></i> <?php echo $post->label; ?></a></li>
                         <li><a href="#"><i class="far fa-calendar"></i> <?php echo $post->create_date; ?></a></li>
@@ -313,7 +313,7 @@
 
                   /*var hasilItem = '<div class="col-md-4"><div class="single-defination" style="text-align:justify;"><a href="<?php echo base_url('web/post/'); ?>'+data[i]['tubmail']+'"><h4 class="mb-20">'+data[i]['judul']+'</h4></a><img data-sizes="auto"  class="lazyload center" data-src="<?php echo base_url(); ?>'+data[i]['img_tub']+'" alt="post"><p>'+data[i]['isi_post']+'</p></div></div>';       */ 
 
-                  var hasilItem = '<div class="media post_item"><img class="lazyload" width="90px" height="80" width="80" src="<?php echo base_url(); ?>'+data[i]['img_tub']+'" alt="post"><div class="media-body"><a href="single-blog.html"><h3>'+data[i]['judul']+'</h3></a><p>'+data[i]['label']+'</p></div></div>';
+                  var hasilItem = '<div class="media post_item"><img class="lazyload" width="90px" height="80" width="80" src="<?php echo base_url(); ?>'+data[i]['img_tub']+'" alt="post"><div class="media-body"><a href="<?php echo base_url('web/post/'); ?>'+data[i]['tubmail']+'"><h3>'+data[i]['judul']+'</h3></a><p>'+data[i]['label']+'</p></div></div>';
                    hasilItems = hasilItems+hasilItem;
                   //console.log(data[i]['judul']);
                }

@@ -12,6 +12,8 @@ class Web extends CI_Controller {
 		$this->footer();
 	}
 
+	
+
 
 	public function error_404()
 	{
@@ -61,6 +63,17 @@ class Web extends CI_Controller {
 		$kode=xss_clean($kode);
 		$label=xss_clean($label);
 		$data=array('judul'=>$kode,'category_search'=>$label,'cetegory_name'=>$kode);
+		$this->header($kode);
+		$this->load->view('global/list_blog',$data);
+		$this->footer();
+	}
+
+	public function search_key()
+	{
+		$this->load->helper('security');
+		$kode=$this->input->post('search',true);
+		$kode=xss_clean($kode);
+		$data=array('judul'=>$kode,'cetegory_name'=>$kode,'category_search'=>'');
 		$this->header($kode);
 		$this->load->view('global/list_blog',$data);
 		$this->footer();

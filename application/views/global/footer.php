@@ -13,7 +13,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_footer_part">
                         <h4>Contact Info</h4>
-                        <i class="ti-tablet"></i> +62 0896 9997 1950<br>
+                        <i class="ti-tablet"></i> +62 896 9997 1950<br>
                         <i class="ti-email"></i> adi.rizky@ubpkarawang.ac.id
                     </div>
                 </div>
